@@ -24,6 +24,7 @@ body {
         }
         th:first-child, td:first-child {
             border-left: none;
+            min-width: 140px; /* Adjust this value as needed */
         }
         th:last-child, td:last-child {
             border-right: none;
