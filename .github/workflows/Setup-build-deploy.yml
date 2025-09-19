@@ -5,6 +5,12 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+# Set workflow-level permissions
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
 
 #------- Setup build, compile classes & packages, and upload artifact to GitHub Pages
@@ -53,15 +59,11 @@ jobs:
       id-token: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v3
-
-      - name: Deploy pages
+      - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         id: deployment
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           artifact_name: build-drop
