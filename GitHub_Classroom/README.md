@@ -2,7 +2,7 @@
 
 ---
 ## GitHub
-You will need a school-approved account at [GitHub](https://github.com/) which needs to comply to the following rules:
+You will need a school-approved account at [GitHub](https://github.com/){:target="_blank"} which needs to comply to the following rules:
 - The account handle should be *YourStudentId-LWHS* (i.e. *1234567-LWSD*).
 - The email linked to the account should be your @lwsd.org email.
 - The profile should have your correct *Name* filled in.
