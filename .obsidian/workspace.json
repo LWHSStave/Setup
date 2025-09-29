@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -168,7 +169,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "46d37ce196d26078",
+  "active": "62033156ffc8a35b",
   "lastOpenFiles": [
     "VSCode/README.md",
     "README.md",
