@@ -1,3 +1,5 @@
+# GitHub Classroom Setup
+
 <u>GitHub</u>
 - [ ] Check initial VSCode structure (should be opened in some *WorkFolder*, not  workspace).
 	- [ ] Configure **user.name** and **user.email** in git
