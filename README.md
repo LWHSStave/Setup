@@ -1,2 +1,4 @@
 # Setup
-Web pages covering steps to setup the dev-environment for the CS classes at LWHS.
+
+This repository contains instructions for setting up the development environment necessary in the LWHS Computer Science classes.
+Follow [LWHS Setup](https://lwhsstave.github.io/Setup/) link for detailed steps.
