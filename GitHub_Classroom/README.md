@@ -20,11 +20,11 @@ If you already have a personal GitHub account which you want to use for school, 
 ```
 ---
 ## GitHub Classroom
-- [ ] Go to the <a href="https://classroom.github.com/a/BbCcMPr6" target="_blank" rel="noopener">Assignment</a> link (i.e *U1.Calculator*), find your name in the *Identifiers* list and click {*Accept this assignment*}.
-- [ ] You get to a page reading *"You're ready to go!"* and showing a repository link underneath. Copy that link in clipboard. If you miss that link and close the browser, you can still locate it from within your GitHub account:
+- [ ] Go to the assignment link corresponding to your period: <a href="https://classroom.github.com/a/rdbLaS3r" target="_blank" rel="noopener">Period_1</a> or <a href="https://classroom.github.com/a/MC8hoQwh" target="_blank" rel="noopener">Period_2</a>. Find your name in the *Identifiers* list and click {*Accept this assignment*}. You get to a page reading *"You're ready to go!"* and showing a repository link underneath. Copy that link in clipboard. If you miss that and close the browser, you can still locate it from within your GitHub account:
 	- [ ] Log in your *YourStudentID_LWSD* GitHub account.
-	- [ ] Go to your *Profile* / *Organizations* / *LWHSStave* / *Repositories* and locate the repository that was created for you for the given assignment.
-	- [ ] Click the {*<> Code*} button to copy the reposity link.
+	- [ ] Go to your *Profile* / *Organizations* / *LWHSStave* / *Repositories* and locate the repository that was created for you for the given assignment.<br>It'll look something like *u0-hello-world-YourStudentId-LWSD*.
+	- [ ] Click the `<> Code` button to copy the reposity link.
 - [ ] Open VSCode and clone the assignment repo:
-	- [ ] Place *AssignmentFolder* under *WorkFolder*.
-	- [ ] Check *AssignmentFolder* is in Classpath. If not present, add it.
+	- [ ] In the search bar from the top type `> clone` then, from the drop down list click select `Git: Clone`.
+	- [ ] Paste the repository link in the edit box that pops up.
+	- [ ] In the file selection dialog that opens, navigate to the "Workspace" folder you've been using so far for all your code, then click `Select as Repository Destination`.
