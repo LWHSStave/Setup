@@ -5,7 +5,7 @@
 You will need a school-approved account at <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> which needs to comply to the following rules:
 - The account handle should be *YourStudentId-LWHS* (i.e. *1234567-LWSD*).
 - The email linked to the account should be your @lwsd.org email.
-- The profile should have your correct *Name* filled in.
+- The profile should not include any personal data (you can leave the *Name* field empty).
 - It should have 2FA enabled, hooked into the Authenticator app on your phone.
 
 If you already have a personal GitHub account which you want to use for school, you can configure it to comply to these rules but the recommendation is to create a new account.
