@@ -27,6 +27,14 @@ jobs:
           rm -rf ./.build
           mkdir -p ./.build
 
+    # Build Markdown files with Jekyll
+      - name: Install Jekyll and Bundler
+        run: |
+          gem install jekyll bundler
+      - name: Build site with Jekyll
+        run: |
+          jekyll build --source . --destination ./.build
+
     #===========================================================
     # Drop home page files in the build ------------------------
       - name: Drop home page files into the build
