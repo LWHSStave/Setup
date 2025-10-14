@@ -27,18 +27,14 @@ jobs:
           rm -rf ./.build
           mkdir -p ./.build
 
+    #=================================================
     # Drop home page files in the build
       - name: Drop home page files into the build
         run: |
           mkdir -p ./.build/res
           cp ./index.html ./index.css ./.build/
           cp -r ./res/* ./.build/res/
-
-    # Drop VSCode setup guide in the build
-      - name: Drop VSCode setup guide in the build
-        run: |
-          mkdir -p ./.build/VSCode
-          cp -r ./VSCode/* ./.build/VSCode/
+    #=================================================
 
     # Create and upload build drop artifact
       - name: Create and upload build drop artifact
