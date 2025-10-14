@@ -1,6 +1,8 @@
+---
+title: GitHub Classroom Setup
+---
 # GitHub Classroom Setup
 
----
 ## GitHub Account
 You will need a school-approved account at <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> in order to receive, work on and submit coding assignments. This account needs to comply to the following rules:
 - The account handle should be *YourStudentId-LWHS* (i.e. *1234567-LWSD*).

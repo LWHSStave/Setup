@@ -1,3 +1,7 @@
+---
+title: VSCode Setup
+---
+
 # VSCode Setup
 
 This page provides instructions for setting up VSCode fit for Java programming.

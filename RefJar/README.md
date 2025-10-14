@@ -1,4 +1,7 @@
-# Referencing **.jar** libraries
+---
+title: Referencing _library_**.jar**
+---
+# Referencing _library_**.jar**
 
 This page provides instructions for setting up a custom java **.jar** library in VSCode, such that your code can reference its classes.
 
