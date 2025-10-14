@@ -31,7 +31,7 @@ jobs:
       - name: Install Jekyll and Bundler
         run: |
           gem install --user-install jekyll bundler
-          export PATH="$HOME/.local/share/gem/ruby/$(ls $HOME/.local/share/gem/ruby)/bin:$PATH"
+          echo "PATH=$HOME/.local/share/gem/ruby/$(ls $HOME/.local/share/gem/ruby)/bin:$PATH" >> $GITHUB_ENV
       - name: Build site with Jekyll
         run: |
           jekyll build --source . --destination ./.build
