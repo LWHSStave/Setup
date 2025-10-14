@@ -34,11 +34,21 @@ jobs:
           mkdir -p ./.build/res
           cp ./index.html ./index.css ./.build/
           cp -r ./res/* ./.build/res/
+    # Drop VSCode files in the build ---------------------------
+      - name: Drop VSCode files into the build
+        run: |
+          mkdir -p ./.build/VSCode
+          cp -r ./VSCode/* ./.build/VSCode
+    # Drop GitHub_Classroom files in the build -----------------
+      - name: Drop GitHub_Classroom files into the build
+        run: |
+          mkdir -p ./.build/GitHub_Classroom
+          cp -r ./GitHub_Classroom/* ./.build/GitHub_Classroom
     # Drop RefJar files in the build ---------------------------
-      - name: Drop home page files into the build
+      - name: Drop RefJar files into the build
         run: |
           mkdir -p ./.build/RefJar/res
-          cp -r ./RefJar/res/* ./.build/RefJar/res
+          cp -r ./RefJar/* ./.build/RefJar
     #===========================================================
 
     # Create and upload build drop artifact
