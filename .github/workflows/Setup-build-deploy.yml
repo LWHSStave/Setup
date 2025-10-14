@@ -30,7 +30,8 @@ jobs:
     # Build Markdown files with Jekyll
       - name: Install Jekyll and Bundler
         run: |
-          gem install jekyll bundler
+          gem install --user-install jekyll bundler
+          export PATH="$HOME/.local/share/gem/ruby/$(ls $HOME/.local/share/gem/ruby)/bin:$PATH"
       - name: Build site with Jekyll
         run: |
           jekyll build --source . --destination ./.build
