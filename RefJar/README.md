@@ -5,7 +5,7 @@ title: Referencing _library_**.jar**
 
 This page provides instructions for setting up a custom java **.jar** library in VSCode, such that your code can reference its classes.
 
-- [ ] Obtain the _library_**.jar** file. This is typically given to you as part of the various assignment packages. Most commonly, this is [`drawing-lib-2.0-shaded.jar`](https://florinteo.github.io/EduCode/DrawingLib/drawing-lib-2.0-shaded.jar), which is used in multiple assignments such as _AP3.CafeArt_ and _DS2.ColoringBook_.
+- [ ] Obtain the _library_**.jar** file. This is typically given to you as part of the various assignment packages. Most commonly, this is [`drawing-lib-2.1-shaded.jar`](https://florinteo.github.io/EduCode/DrawingLib/drawing-lib-2.1-shaded.jar), which is used in multiple assignments such as _AP3.CafeArt_ and _DS2.ColoringBook_.
 - [ ] Drop the _library_**.jar** file in your project, if it is not already there, typically in a lib folder. Since initially the library is not configured with java, your code referencing its classes will show multiple errors, as exemplified below:  
 
     <img alt="RefJar-0" src="https://lwhsstave.github.io/Setup/RefJar/res/RefJar-0.png">
