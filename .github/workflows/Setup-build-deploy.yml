@@ -1,0 +1,89 @@
+name: Setup-build-deploy
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+# Set workflow-level permissions
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+
+#------- Setup build, compile classes & packages, and upload artifact to GitHub Pages
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    # Checkout repository, setup build environment and cleanup build folder
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+    # Setup build directory
+      - name: Clear and recreate the .build directory
+        run:  |
+          rm -rf ./.build
+          mkdir -p ./.build
+
+    # Build Markdown files with Jekyll
+      - name: Install Jekyll and Bundler
+        run: |
+          gem install --user-install jekyll bundler
+          echo "PATH=$HOME/.local/share/gem/ruby/$(ls $HOME/.local/share/gem/ruby)/bin:$PATH" >> $GITHUB_ENV
+      - name: Build site with Jekyll
+        run: |
+          jekyll build --source . --destination ./.build
+
+    #===========================================================
+    # Drop home page files in the build ------------------------
+      - name: Drop home page files into the build
+        run: |
+          mkdir -p ./.build/res
+          cp ./index.html ./index.css ./.build/
+          cp -r ./res/* ./.build/res/
+    # Drop VSCode files in the build ---------------------------
+      - name: Drop VSCode files into the build
+        run: |
+          mkdir -p ./.build/VSCode
+          cp -r ./VSCode/* ./.build/VSCode
+    # Drop GitHub_Classroom files in the build -----------------
+      - name: Drop GitHub_Classroom files into the build
+        run: |
+          mkdir -p ./.build/GitHub_Classroom
+          cp -r ./GitHub_Classroom/* ./.build/GitHub_Classroom
+    # Drop RefJar files in the build ---------------------------
+      - name: Drop RefJar files into the build
+        run: |
+          mkdir -p ./.build/RefJar/res
+          cp -r ./RefJar/* ./.build/RefJar
+    #===========================================================
+
+    # Create and upload build drop artifact
+      - name: Create and upload build drop artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: build-drop
+          path: ./.build/
+
+#------- Deploy the generated build artifact to github-pages
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        id: deployment
+        with:
+          artifact_name: build-drop
