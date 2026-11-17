@@ -1,5 +1,6 @@
 ---
 title: VSCode Setup
+layout: setup-guide
 ---
 
 # VSCode Setup
