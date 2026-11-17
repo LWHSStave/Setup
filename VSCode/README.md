@@ -7,7 +7,7 @@ layout: setup-guide
 
 This page provides instructions for setting up VSCode fit for Java programming.
 
-- [ ] Download and install [Java](https://www.java.com/en/download/) runtime.
+- [ ] Download and install the [Java](https://www.java.com/en/download/) runtime.
 - [ ] Download and install [VSCode](https://code.visualstudio.com/download).
 
 You can also find here a list of the most common environment issues along with the actions that can be taken to address them:
