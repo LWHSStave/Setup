@@ -12,10 +12,10 @@ This page provides instructions for setting up VSCode fit for Java programming.
 
 You can also find here a list of most common environment issues and actions that can be taken to address them:
 
-- [ ] VSCode does not recognize the `main()` entry point in order to launch a program.
-- [ ] Java Source code is plagued by multiple misleading red squiggly lines.
+1. [ ] VSCode does not recognize the `main()` entry point in order to launch a program.
+2. [ ] Java Source code is plagued by multiple misleading red squiggly lines.
 
 Lastly, when everything else fails, here are the step-by-step guides for:
 
-- [ ] Verify weather the Java IDE is correctly and completely installed.
-- [ ] Fully reset VSCode configuration to eliminate some more stubborn environment issues.
+3. [ ] Verify weather the Java IDE is correctly and completely installed.
+4. [ ] Fully reset VSCode configuration to eliminate some more stubborn environment issues.
