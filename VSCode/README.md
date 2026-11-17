@@ -18,5 +18,5 @@ You can also find here a list of the most common environment issues along with t
 Lastly, when everything else fails, here are the step-by-step guides to:
 
 {:start="3"}
-1. Verify whether the Java IDE is correctly and completely installed.
+1. Check whether the Java IDE is installed correctly and completely.
 2. Reset completely the configuration of VSCode in order to eliminate the most persistent issues.
